@@ -1,4 +1,4 @@
-name: CI
+﻿name: CI
 
 on:
   pull_request:
@@ -25,10 +25,10 @@ jobs:
           cache: "maven"
 
       - name: Run tests
-        run: mvn -B test
+        run: ./mvnw -B test
 
       - name: Build package
-        run: mvn -B package -DskipTests
+        run: ./mvnw -B package -DskipTests
 
   frontend:
     name: Frontend (Node)
