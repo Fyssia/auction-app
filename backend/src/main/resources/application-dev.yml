@@ -14,3 +14,9 @@ spring:
   flyway:
     enabled: true
     locations: classpath:db/migration
+
+app:
+  jwt:
+    issuer: "auction-backend"
+    secret: "YIW+NMalreOp+sjp+jmbX1HY/7ll8U3KZShqicun1HA="
+    accessTokenTtlMinutes: 60
